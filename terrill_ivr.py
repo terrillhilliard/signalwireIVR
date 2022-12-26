@@ -6,7 +6,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 # Set up the SignalWire client
-client = Client(project='main', token='PTf7fb72428c301d287b08d6e7404c09881481ed9911507f6f')
+client = Client(project='yourprojectname', token='yourtokenID')
 
 
 @app.route('/ivr', methods=['POST'])
@@ -35,7 +35,7 @@ def ivr():
             call.say('Sorry, there was an error recording your message.')
     elif result.digits == '2':
         call.say('Connecting you to a representative.')
-        call.transfer('+17043369285') # Transfer the call to a representative
+        call.transfer('+17044444444') # Transfer the call to a representative
     else:
         call.say('Sorry, I did not understand your response. Please try again.')
         call.hangup()

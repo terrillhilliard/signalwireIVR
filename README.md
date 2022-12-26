@@ -49,5 +49,7 @@ Further resources
 For more information on building telephony applications with SignalWire, you can refer to the SignalWire API documentation. You may also find the following resources helpful:
 
 SignalWire Quickstart Guide
+
 SignalWire Python client library documentation
+
 SignalWire community forum
